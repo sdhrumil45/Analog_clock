@@ -1,0 +1,156 @@
+
+body{
+    background-color: rgb(131, 202, 157);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.clock{
+    position: relative;
+    height:300px;
+    width: 300px;
+    background-color: rgb(205, 90, 113);
+    border-radius: 50%;
+    border: solid rgb(26, 27, 26) 5px ;
+    box-shadow: 1px 2px 15px rgb(83, 80, 80);
+}
+
+
+img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+    z-index: 2;
+}
+
+.number h1{
+    position: absolute;
+}
+
+#twelve{
+    left: 50%;
+    transform: translate(-50%);
+    top: -20px;
+}
+
+#six{
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+}
+
+#three{
+    top:110px;
+    right:10px;
+
+}
+
+#nine{
+    top:110px;
+    left:10px;
+}
+
+/*
+.hand div{
+    position: absolute;
+}
+
+#center{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 138px;
+    z-index: 5;
+}
+
+#second{
+    height: 110px;
+    width: 5px;
+    background-color: rgb(42, 200, 100);
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+    border-radius:0 0 15px 15px;
+}
+
+#minute{
+    height: 90px;
+    width: 8px;
+    background-color:black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+    border-radius:0 0 15px 15px;
+}
+
+#hour{
+    height: 70px;
+    width: 8px;
+    background-color:black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+    border-radius:0 0 15px 15px;
+}
+*/
+
+
+.hand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#center{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 5;
+    left: 50%;
+    transform: translate(-50%);
+    bottom:47%;
+    
+}
+
+.hand div{
+    position: absolute;
+    transform-origin:bottom center;
+    bottom:50%;
+    z-index: 4;
+}
+
+#second{
+    height: 110px;
+    width: 5px;
+    background-color: rgb(42, 200, 100);
+    border-radius:50% 50% 0% 0%;
+    transform: rotate(10deg);
+}
+
+#minute{
+    height: 100px;
+    width: 8px;
+    background-color: rgb(14, 15, 15);
+    border-radius:50% 50% 0% 0%;
+}
+
+#hour{
+    height: 70px;
+    width: 8px;
+    background-color: rgb(14, 15, 15);
+    border-radius:50% 50% 0% 0%;
+    
+}
+
